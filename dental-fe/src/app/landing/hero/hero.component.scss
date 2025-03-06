@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  height: 60vh;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  background-image: url(../../../../public/hero-bg.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-heading {
+  font-family: "Playfair Display", serif;
+}
+
+@media (max-width: 768px) {
+  .hero-bg {
+    background-image: linear-gradient(#21bfb7, #169f9a);
+    clip-path: ellipse(123% 56% at 54% 40%);
+  }
+}

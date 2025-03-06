@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/index.css" important;
+@import "tailwindcss" important;
+
+body {
+  font-family: "Maven Pro", sans-serif;
+}
+
+@theme {
+  --breakpoint-mob: "375px",
+  --breakpoint-sm: "600px",
+  --breakpoint-tab: "768px",
+  --breakpoint-md: "960px",
+  --breakpoint-lg: "1280px",
+  --breakpoint-xl: "1440px",
+}
+
+.max-w-primary {
+  max-width: 1260px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.btn {
+  padding: 0.875em 1em;
+  box-shadow: 0 2px 10px rgba(34, 34, 34, 0.2);
+  border-radius: 50px;
+  font-size: 1em;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  transition: 300ms ease all;
+  height: fit-content;
+  background: white;
+  line-height: 1;
+  background-position: 0 0;
+  background-size: 200% 100%;
+  color: #115278;
+  cursor: pointer;
+
+  fa-icon {
+    z-index: 2;
+    transition-delay: 0;
+    font-size: 1em;
+    transition: 300msease all;
+    margin-top: -0.14rem;
+    margin-bottom: -0.14rem;
+    transform: scale(1);
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 20px rgba(34, 34, 34, 0.2);
+    background-position: 99% 0 !important;
+  }
+
+  &--primary {
+    background-color: #115278;
+    background-image: linear-gradient(to right, #115278 51%, #1ebeb6 100%);
+    color: white;
+  }
+}
+
+@media(max-width:640px ){
+  .btn {
+    font-size: 0.8em;
+  }
+}
