@@ -6,19 +6,47 @@ body {
   font-family: "Maven Pro", sans-serif;
 }
 
-@theme {
-  --breakpoint-mob: "375px",
-  --breakpoint-sm: "600px",
-  --breakpoint-tab: "768px",
-  --breakpoint-md: "960px",
-  --breakpoint-lg: "1280px",
-  --breakpoint-xl: "1440px",
+@font-face {
+  font-family: Dentist2;
+  src: url(../public/fonts/Dentist2.woff) format("woff"),
+    url(../public/fonts/Dentist2.ttf) format("truetype");
+}
+
+*[data-ico-dentist2]:before {
+  font-family: Dentist2;
+  content: attr(data-ico-dentist2);
+}
+
+@theme static {
+  --breakpoint-mob: 375px;
+  --breakpoint-sm: 600px;
+  --breakpoint-tab: 768px;
+  --breakpoint-md: 960px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1440px;
+
+  --color-primary: #1ebeb6;
+  --color-accent: #115278;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
 }
 
 .max-w-primary {
   max-width: 1260px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 30px;
+}
+
+.section-padding {
+  padding-top: 10em;
+  padding-bottom: 5em;
 }
 
 .btn {
@@ -61,7 +89,7 @@ body {
   }
 }
 
-@media(max-width:640px ){
+@media (max-width: 640px) {
   .btn {
     font-size: 0.8em;
   }

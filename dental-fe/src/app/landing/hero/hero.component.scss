@@ -1,6 +1,6 @@
 :host {
   display: block;
-  height: 60vh;
+  height: 100%;
 }
 
 .hero-bg {
@@ -11,10 +11,6 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-}
-
-.hero-heading {
-  font-family: "Playfair Display", serif;
 }
 
 @media (max-width: 768px) {
