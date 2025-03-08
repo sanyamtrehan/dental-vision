@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { HeroComponent } from './hero';
 import { ServicesComponent } from './services';
 import { KidsCareComponent } from './kids-care';
+import { ContactUsComponent } from './contact-us';
 import { TestimonialsComponent } from './testimonials';
 
 @Component({
@@ -11,8 +12,9 @@ import { TestimonialsComponent } from './testimonials';
   imports: [
     HeroComponent,
     ServicesComponent,
-    TestimonialsComponent,
     KidsCareComponent,
+    ContactUsComponent,
+    TestimonialsComponent,
   ],
   host: { class: 'h-full flex flex-col' },
 })

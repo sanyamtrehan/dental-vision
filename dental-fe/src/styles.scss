@@ -3,6 +3,11 @@
 @import "tailwindcss" important;
 
 body {
+  background-color: white;
+}
+
+body,
+pre {
   font-family: "Maven Pro", sans-serif;
 }
 
