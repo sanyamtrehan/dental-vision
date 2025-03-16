@@ -1,11 +1,18 @@
 <div class="flex flex-col flex-1">
-  <h3 class="text-accent text-6xl mb-5">Kids Oral Care</h3>
+  <h3 class="text-accent text-4xl tab:text-5xl md:text-6xl mb-10">
+    Kids Oral Care
+  </h3>
   <p class="mb-10">
-    Efficiently enable enabled sources and cost effective products. Completely
-    synthesize principle-centered information.
+    Gentle and specialized dental care tailored for your little ones. We ensure
+    a fun, stress-free experience to keep their smiles bright and healthy from
+    the very start.
   </p>
 
-  <div class="flex">
+  <ng-container
+    *ngTemplateOutlet="kidsImg; context: { classVar: 'block md:hidden mb-10' }"
+  ></ng-container>
+
+  <div class="flex flex-col sm:flex-row gap-7">
     <div
       *ngFor="let care of oralCares; let isOdd = odd"
       class="flex flex-col items-center text-center"
@@ -30,6 +37,12 @@
   </div>
 </div>
 
-<div class="flex-1">
-  <img src="kids-care/kids-care.png" alt="kids oral care" />
-</div>
+<ng-container
+  *ngTemplateOutlet="kidsImg; context: { classVar: 'hidden md:block' }"
+></ng-container>
+
+<ng-template #kidsImg let-classVar="classVar">
+  <div class="{{ classVar }} flex-1">
+    <img class="w-full" src="kids-care/kids-care.png" alt="kids oral care" />
+  </div>
+</ng-template>

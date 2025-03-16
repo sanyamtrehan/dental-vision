@@ -1,69 +1,85 @@
-<div class="border-[5px] border-[#f6eeea] rounded-[26px] px-12 py-10">
+<div
+  class="border-[5px] border-[#f6eeea] rounded-[26px] px-5 mob:px-8 sm:px-12 py-3 mob:py-6 sm:py-10"
+>
   <h4 class="text-primary text-2xl">Consult Vibha Arora</h4>
 
   <ng-container *ngTemplateOutlet="divider"></ng-container>
 
-  <div *ngFor="let info of contactInfo" class="flex gap-4">
-    <span
-      class="mb-5 text-5xl p-4 rounded-full transition-all duration-300 bg-[#f3f3f3] text-primary"
-      attr.data-ico-dentist2="{{ info.icon }}"
-    ></span>
+  <div class="flex justify-center flex-col tab:flex-row md:flex-col gap-7">
+    <div class="doctor-img mx-auto w-full sm:w-3/5 tab:w-2/5 md:w-full"></div>
 
-    <div class="flex flex-col gap-3">
-      <h3 class="text-2xl text-accent">
-        {{ info.label }}
-      </h3>
-      <pre class="text-sm">{{ info.data }}</pre>
+    <div class="flex flex-col gap-5">
+      <div *ngFor="let info of contactInfo" class="flex gap-4">
+        <span
+          class="text-5xl p-4 rounded-full transition-all duration-300 bg-[#f3f3f3] text-primary w-fit h-fit"
+          attr.data-ico-dentist2="{{ info.icon }}"
+        ></span>
+
+        <div class="flex flex-col gap-2 tab:gap-3">
+          <h3 class="text-xl tab:text-2xl text-accent">
+            {{ info.label }}
+          </h3>
+          <pre class="text-sm text-wrap break-words">{{ info.data }}</pre>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="flex flex-col my-5">
   <p class="text-xl">
-    Dr. Maria Welsh is dedicated to providing her patients with the most
-    beautiful smile together with the best dental protection available nowadays.
-    Check-ups are a major part of the job and are important for patients keeping
-    on top of their oral care.
+    Dr. Vibha Arora is dedicated to providing her patients with the most
+    beautiful smiles, along with the best dental protection available today.
+    Regular check-ups are essential for maintaining optimal oral health and
+    ensuring long-term dental care.
   </p>
 
   <ng-container *ngTemplateOutlet="divider"></ng-container>
 
-  <div class="flex gap-10">
+  <div class="flex flex-col sm:flex-row sm:gap-10 sm:text-sm lg:text-base">
     <div class="flex flex-col flex-1 gap-4">
       <p>
-        Capitalize on low hanging fruit to identify a ballpark value added
-        activity to beta test. Override the digital divide with additional
-        clickthroughs from DevOps. Nanotechnology immersion along the
-        information highway will close the loop on focusing solely on the bottom
-        line.
+        At Dental Vision, we believe that a healthy smile is a reflection of
+        overall well-being. Led by Dr. Vibha Arora, our clinic is committed to
+        providing compassionate, high-quality dental care in a serene and
+        welcoming environment. With years of experience and a passion for
+        excellence, Dr. Arora and her team utilize the latest advancements in
+        dentistry to ensure personalized treatment plans for every patient.
       </p>
 
       <p>
-        Podcasting operational change management inside of workflows to
-        establish a framework. Taking seamless key performance indicators
-        offline to maximise the long tail. Keeping your eye on the ball while
-        performing a deep dive on the start-up mentality to derive convergence
-        on cross-platform integration. Collaboratively administrate empowered
-        markets via plug-and-play networks. Dynamically procrastinate B2C users
-        after installed base benefits. Dramatically visualize customer directed
-        convergence without revolutionary ROI.
+        Nestled in the foothills of the Himalayas, our clinic blends modern
+        dental solutions with a holistic approach, ensuring that your experience
+        is comfortable and stress-free. From preventive care to advanced
+        restorative treatments, we prioritize patient education and empowerment,
+        helping you maintain lifelong oral health with confidence.
+      </p>
+
+      <p>
+        Our mission is to make top-tier dental care accessible to everyone while
+        embracing the peaceful essence of our surroundings. Whether you seek a
+        routine check-up, a smile makeover, or specialized dental procedures, we
+        are dedicated to making your visit seamless and rewarding.
       </p>
     </div>
 
     <div class="flex flex-col flex-1 gap-4">
       <p>
-        Capitalize on low hanging fruit to identify a ballpark value added
-        activity to beta test. Override the digital divide with additional
-        clickthroughs from DevOps. Nanotechnology immersion along the
-        information highway will close the loop on focusing solely on the bottom
-        line.
+        We believe that a visit to the dentist should be a positive experience,
+        free from anxiety and discomfort. Our warm and friendly team is here to
+        listen to your concerns, guide you through every step of your treatment,
+        and ensure that you feel at ease in our care. With a focus on pain-free
+        procedures and patient-centric approaches, we aim to transform the way
+        you think about dental care.
       </p>
 
       <p>
-        Administrate turnkey channels whereas virtual e-tailers. Objectively
-        seize scalable metrics whereas proactive e-services. Seamlessly empower
-        fully researched growth strategies and interoperable internal or organic
-        sources.
+        Beyond just treatment, we are passionate about preventive care and
+        long-term oral health. By equipping our patients with the knowledge and
+        tools needed to maintain their smiles, we empower them to take charge of
+        their dental well-being. At Dental Vision, we are not just restoring
+        smiles—we are building lasting relationships based on trust, care, and
+        excellence.
       </p>
     </div>
   </div>

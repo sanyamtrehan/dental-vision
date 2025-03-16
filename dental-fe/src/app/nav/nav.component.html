@@ -1,11 +1,11 @@
 <div
-  class="flex sm:items-center justify-end border-b border-[#ffffff1a] sm:h-[36px] sm:gap-3.5 flex-col sm:flex-row py-1.5 sm:p-0"
+  class="hidden sm:flex sm:items-center justify-end border-b border-[#ffffff1a] sm:h-[36px] sm:gap-3.5 flex-col sm:flex-row py-1.5 sm:p-0"
 >
   <div
     *ngFor="let data of bannerData"
     class="flex items-center gap-[0.5em] text-white text-[0.75em] sm:text-[.875em]"
   >
-    <fa-icon class="text-[#115278]" size="xs" [icon]="data.icon"></fa-icon>
+    <fa-icon class="text-accent" size="xs" [icon]="data.icon"></fa-icon>
     <span>{{ data.label }}</span>
     <span class="opacity-50">{{ data.data }}</span>
   </div>

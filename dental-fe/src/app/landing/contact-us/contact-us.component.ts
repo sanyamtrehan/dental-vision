@@ -4,7 +4,9 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
-  host: { class: 'max-w-primary section-padding flex gap-10' },
+  host: {
+    class: 'max-w-primary section-padding flex flex-col md:flex-row gap-10',
+  },
   imports: [CommonModule],
 })
 export class ContactUsComponent {

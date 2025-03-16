@@ -2,6 +2,10 @@
 @import "tailwindcss/index.css" important;
 @import "tailwindcss" important;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
 }
@@ -30,8 +34,8 @@ pre {
   --breakpoint-lg: 1280px;
   --breakpoint-xl: 1440px;
 
-  --color-primary: #1ebeb6;
-  --color-accent: #115278;
+  --color-primary: #f70f8a;
+  --color-accent: #2f2f2f;
 }
 
 h1,
@@ -52,6 +56,19 @@ h6 {
 .section-padding {
   padding-top: 10em;
   padding-bottom: 5em;
+
+  @media (max-width: 960px) {
+    padding-top: 8em;
+    padding-bottom: 3.5em;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 6em;
+  }
+
+  @media (max-width: 600px) {
+    padding-top: 4em;
+  }
 }
 
 .btn {
@@ -68,7 +85,7 @@ h6 {
   line-height: 1;
   background-position: 0 0;
   background-size: 200% 100%;
-  color: #115278;
+  color: var(--color-accent);
   cursor: pointer;
 
   fa-icon {
@@ -88,8 +105,12 @@ h6 {
   }
 
   &--primary {
-    background-color: #115278;
-    background-image: linear-gradient(to right, #115278 51%, #1ebeb6 100%);
+    background-color: var(--color-accent);
+    background-image: linear-gradient(
+      to right,
+      var(--color-accent) 51%,
+      #838383 100%
+    );
     color: white;
   }
 }

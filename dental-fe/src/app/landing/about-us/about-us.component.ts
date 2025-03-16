@@ -5,7 +5,11 @@ import { CommonModule } from '@angular/common';
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
   imports: [CommonModule],
-  host: { class: 'max-w-primary section-padding flex w-full gap-6' },
+  styleUrl: './about-us.component.scss',
+  host: {
+    class:
+      'max-w-primary section-padding flex w-full gap-6 flex-col md:flex-row',
+  },
 })
 export class AboutUsComponent {
   contactInfo = [

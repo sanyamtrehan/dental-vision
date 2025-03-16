@@ -15,24 +15,44 @@ export class ServicesComponent {
 
   services = [
     {
-      img: 'general-dentistry',
-      name: 'General Dentistry',
-      desc: 'Enthusiastically mesh long term high impact infrastructures efficient customer service.',
+      img: '1-implants-and-aligners',
+      name: 'Implants and aligners',
+      desc: 'Restore missing teeth and straighten smiles with advanced solutions.',
     },
     {
-      img: 'radiography',
-      name: 'Radiography',
-      desc: 'Leverage agile frameworks to provide a robust synopsis for high level overviews.',
+      img: '2-braces',
+      name: 'Braces',
+      desc: 'Align teeth perfectly for a healthier and confident smile.',
     },
     {
-      img: 'dental-pediatric',
-      name: 'Dental Pediatric',
-      desc: 'Iterative approaches to corporate strategy foster collaborative thinking further value.',
+      img: '3-veeners',
+      name: 'Veeners',
+      desc: 'Enhance your smile with natural-looking, durable dental veneers.',
     },
     {
-      img: 'whitening',
-      name: 'Whitening',
-      desc: 'Organically grow the holistic world view of disruptive innovation via better workplace.',
+      img: '4-cosmetic-dentistry',
+      name: 'Cosmetic dentistry',
+      desc: 'Transform your smile with advanced aesthetic dental treatments.',
+    },
+    {
+      img: '5-bleaching',
+      name: 'Bleaching',
+      desc: 'Brighten your teeth with safe and effective whitening treatments.',
+    },
+    {
+      img: '6-maxillary-fracture',
+      name: 'Maxillary fracture',
+      desc: 'Expert treatment for upper jaw fractures ensuring proper healing.',
+    },
+    {
+      img: '7-mandibular-fracture',
+      name: 'Mandibular fracture',
+      desc: 'Precise care for lower jaw fractures with specialized treatment.',
+    },
+    {
+      img: '8-crown-and-bridge',
+      name: 'Crown and bridge',
+      desc: 'Restore damaged teeth with durable crowns and bridges.',
     },
   ];
 }
