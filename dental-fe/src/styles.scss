@@ -105,6 +105,16 @@ h6 {
   }
 
   &--primary {
+    background-color: var(--color-primary);
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary) 51%,
+      #f09fd0 100%
+    );
+    color: white;
+  }
+
+  &--accent {
     background-color: var(--color-accent);
     background-image: linear-gradient(
       to right,
@@ -112,6 +122,22 @@ h6 {
       #838383 100%
     );
     color: white;
+  }
+}
+
+.primary-bg-img {
+  background-image: url(../public/primary-bg.jpg);
+}
+
+.gallery {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 5vw);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 }
 

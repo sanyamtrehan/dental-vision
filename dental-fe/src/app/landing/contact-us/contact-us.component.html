@@ -23,21 +23,19 @@
       class="flex gap-4"
     >
       <span
-        class="mb-5 text-5xl p-4 rounded-full transition-all duration-300 bg-[#f3f3f3] text-primary"
+        class="mb-5 text-5xl p-4 rounded-full transition-all duration-300 bg-[#f3f3f3] text-primary h-fit"
         attr.data-ico-dentist2="{{ info.icon }}"
-        [ngClass]="{ 'text-white bg-accent': isFirst }"
       ></span>
 
       <div class="flex flex-col gap-3">
-        <h3
-          class="text-2xl"
-          ngClass="{{ isFirst ? 'text-accent' : 'text-primary' }}"
-        >
+        <h3 class="text-2xl text-primary">
           {{ info.label }}
         </h3>
-        <pre class="text-sm text-wrap">{{ info.data }}</pre>
+        <pre class="text-sm text-wrap max-w-72" [innerHTML]="info.data"></pre>
       </div>
     </div>
+
+    <a class="btn btn--primary !bg-primary w-fit">Consult With Us</a>
   </div>
 </div>
 

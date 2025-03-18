@@ -25,8 +25,8 @@ export class ServicesComponent {
       desc: 'Align teeth perfectly for a healthier and confident smile.',
     },
     {
-      img: '3-veeners',
-      name: 'Veeners',
+      img: '3-veneers',
+      name: 'Veneers',
       desc: 'Enhance your smile with natural-looking, durable dental veneers.',
     },
     {

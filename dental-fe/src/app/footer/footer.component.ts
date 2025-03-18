@@ -22,18 +22,15 @@ export class FooterComponent {
     { link: 'Contact Us', sectionId: 'landing-contact-us' },
   ];
 
-  workingTimings = [
-    { day: 'Monday', timing: '8AM - 9PM' },
-    { day: 'Tuesday', timing: '8AM - 9PM' },
-    { day: 'Wednesday', timing: '8AM - 9PM' },
-    { day: 'Thursday', timing: '8AM - 9PM' },
-    { day: 'Friday', timing: '8AM - 9PM' },
-    { day: 'Saturday', timing: '8AM - 9PM' },
-    { day: 'Sunday', timing: 'Closed' },
-  ];
+  private getTiming = (from: number, to: number) => `${from}AM - ${to}PM`;
 
-  /**
-   * constructor
-   */
-  constructor() {}
+  workingTimings = [
+    { day: 'Monday', timing: this.getTiming(8, 9) },
+    { day: 'Tuesday', timing: this.getTiming(8, 9) },
+    { day: 'Wednesday', timing: this.getTiming(8, 9) },
+    { day: 'Thursday', timing: this.getTiming(8, 9) },
+    { day: 'Friday', timing: this.getTiming(8, 9) },
+    { day: 'Saturday', timing: this.getTiming(8, 9) },
+    { day: 'Sunday', timing: this.getTiming(8, 9) },
+  ];
 }

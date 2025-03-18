@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
+
+import { AppService } from '../../app.service';
 
 @Component({
   selector: 'app-about-us',
@@ -12,12 +14,17 @@ import { CommonModule } from '@angular/common';
   },
 })
 export class AboutUsComponent {
+  private appService = inject(AppService);
   contactInfo = [
-    { icon: '', label: 'Call Us', data: '94187-94157\n08192-292929' },
+    {
+      icon: '',
+      label: 'Call Us',
+      data: '<a href="tel:+919418794157">+91 94187-94157</a>',
+    },
     {
       icon: '',
       label: 'Reach Us',
-      data: 'G-4, Shri Krishna Complex,\nNew Tanda Medical College Gate, Tanda',
+      data: this.appService.address,
     },
     {
       icon: '',
@@ -25,9 +32,4 @@ export class AboutUsComponent {
       data: 'office@dentalvision.com\n24hr@dentalvision.com',
     },
   ];
-
-  /**
-   * constructor
-   */
-  constructor() {}
 }

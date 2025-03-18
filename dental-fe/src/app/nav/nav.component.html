@@ -1,20 +1,20 @@
-<div
-  class="hidden sm:flex sm:items-center justify-end border-b border-[#ffffff1a] sm:h-[36px] sm:gap-3.5 flex-col sm:flex-row py-1.5 sm:p-0"
+<marquee
+  class="hidden sm:flex items-center border-b border-[#ffffff1a] h-[36px]"
 >
   <div
     *ngFor="let data of bannerData"
-    class="flex items-center gap-[0.5em] text-white text-[0.75em] sm:text-[.875em]"
+    class="inline-flex items-center gap-[0.5em] text-white text-[0.75em] sm:text-[.875em] mr-3.5"
   >
     <fa-icon class="text-white" size="xs" [icon]="data.icon"></fa-icon>
     <span>{{ data.label }}</span>
     <span class="opacity-50">{{ data.data }}</span>
   </div>
-</div>
+</marquee>
 
-<nav class="flex items-center justify-between">
-  <app-logo></app-logo>
+<nav class="flex items-center justify-between py-3">
+  <app-logo class="h-14"></app-logo>
 
-  <a class="btn btn--primary" href="tel:{{ phoneNumber.call }}"
+  <a class="btn btn--accent" href="tel:{{ phoneNumber.call }}"
     ><fa-icon [icon]="faPhone"></fa-icon>{{ phoneNumber.display }}</a
   >
 </nav>

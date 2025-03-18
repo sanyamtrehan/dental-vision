@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
+
+import { AppService } from '../../app.service';
 
 @Component({
   selector: 'app-testimonials',
@@ -22,9 +24,11 @@ export class TestimonialsComponent {
     {
       img: 'client-03',
       title: 'Nothing but the tooth!',
-      desc: 'Efficiently enable enabled sources and cost effective produc synthesize principle-centered information.',
+      desc: 'Efficiently enable enabled sources and cost effective product synthesize principle-centered information.',
     },
   ];
+
+  openCalendly = inject(AppService).openCalendly;
 
   /**
    * constructor

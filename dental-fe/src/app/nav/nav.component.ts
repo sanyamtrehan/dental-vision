@@ -25,7 +25,7 @@ export class NavComponent {
   constructor(private readonly appService: AppService) {
     const no = appService.phoneNumber.toString();
     this.phoneNumber = {
-      display: no.substring(0, 5) + '-' + no.substring(5, no.length),
+      display: `+91 ${no.substring(0, 5)}-${no.substring(5, no.length)}`,
       call: `+91${no}`,
     };
     this.bannerData = this.getBannerData();
