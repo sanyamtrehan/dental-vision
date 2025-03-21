@@ -17,17 +17,17 @@ export class AboutUsComponent {
   private appService = inject(AppService);
   contactInfo = [
     {
-      icon: '',
+      icon: '\uE902',
       label: 'Education',
       data: 'Bachelor of Dental Surgery (BDS)',
     },
     {
-      icon: '',
+      icon: '\uE91E',
       label: 'Work Experiences',
       data: 'Observership at Dr. Rajender Prasad Government Medical College, Tanda Kangra\n\nEx. Dental Surgeon/Lecturer\nS.G.R.D. Dental College, Amritsar',
     },
     {
-      icon: '',
+      icon: '\uE907',
       label: 'Call Us',
       data: '<a href="tel:+919418794157">+91 94187-94157</a>',
     },

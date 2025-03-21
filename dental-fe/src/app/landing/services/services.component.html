@@ -26,7 +26,20 @@
   </div>
 </div>
 
-<p>
-  and other basic services like:
-  <span *ngFor="let service of otherServices">{{ service }}</span>
-</p>
+<section class="flex flex-col gap-4">
+  <h3 class="text-accent text-xl tab:text-2xl">
+    And some other services we offer:
+  </h3>
+  <div class="grid sm:grid-cols-2 tab:grid-cols-3 md:grid-cols-4 gap-3">
+    <div
+      *ngFor="let service of otherServices"
+      class="flex items-baseline gap-1"
+    >
+      <div
+        attr.data-ico-dentist2="{{ '\uE925' }}"
+        class="text-primary -scale-x-100 text-2xl"
+      ></div>
+      <span class="text-lg">{{ service }}</span>
+    </div>
+  </div>
+</section>

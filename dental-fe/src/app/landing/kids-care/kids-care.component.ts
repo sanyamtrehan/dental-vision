@@ -13,17 +13,17 @@ import { CommonModule } from '@angular/common';
 export class KidsCareComponent {
   oralCares = [
     {
-      icon: '',
+      icon: '\uE90A',
       label: 'Brushing',
       desc: 'Develop strong oral hygiene habits with proper brushing techniques that keep cavities and plaque at bay.',
     },
     {
-      icon: '',
+      icon: '\uE92C',
       label: 'Nutrition',
       desc: 'A balanced diet plays a crucial role in oral health. We guide parents on the best foods for strong teeth and gums.',
     },
     {
-      icon: '',
+      icon: '\uE91B',
       label: 'Checkups',
       desc: "Regular dental visits ensure early detection of issues and keep your child's smile healthy and bright.",
     },

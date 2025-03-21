@@ -16,17 +16,17 @@ export class ContactUsComponent {
 
   contactInfo = [
     {
-      icon: '',
+      icon: '\uE909',
       label: '24/7 Emergency',
       data: '<a href="tel:+919418794157">+91 94187-94157</a>',
     },
     {
-      icon: '',
+      icon: '\uE902',
       label: 'Address',
       data: this.appService.address,
     },
     // {
-    //   icon: '',
+    //   icon: '\uE907',
     //   label: 'Write Us',
     //   data: '<a href="mailto:dentalvisiontanda@gmail.com">dentalvisiontanda@gmail.com</a>',
     // },
