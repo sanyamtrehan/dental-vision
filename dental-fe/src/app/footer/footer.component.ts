@@ -25,12 +25,12 @@ export class FooterComponent {
   private getTiming = (from: number, to: number) => `${from}AM - ${to}PM`;
 
   workingTimings = [
-    { day: 'Monday', timing: this.getTiming(8, 9) },
-    { day: 'Tuesday', timing: this.getTiming(8, 9) },
-    { day: 'Wednesday', timing: this.getTiming(8, 9) },
-    { day: 'Thursday', timing: this.getTiming(8, 9) },
-    { day: 'Friday', timing: this.getTiming(8, 9) },
-    { day: 'Saturday', timing: this.getTiming(8, 9) },
-    { day: 'Sunday', timing: this.getTiming(8, 9) },
+    { day: 'Monday', timing: this.getTiming(9, 8) },
+    { day: 'Tuesday', timing: this.getTiming(9, 8) },
+    { day: 'Wednesday', timing: this.getTiming(9, 8) },
+    { day: 'Thursday', timing: this.getTiming(9, 8) },
+    { day: 'Friday', timing: this.getTiming(9, 8) },
+    { day: 'Saturday', timing: this.getTiming(9, 8) },
+    { day: 'Sunday', timing: 'On Appointment' },
   ];
 }

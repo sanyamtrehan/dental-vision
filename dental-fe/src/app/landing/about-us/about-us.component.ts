@@ -17,19 +17,19 @@ export class AboutUsComponent {
   private appService = inject(AppService);
   contactInfo = [
     {
-      icon: '',
-      label: 'Call Us',
-      data: '<a href="tel:+919418794157">+91 94187-94157</a>',
-    },
-    {
       icon: '',
-      label: 'Reach Us',
-      data: this.appService.address,
+      label: 'Education',
+      data: 'Bachelor of Dental Surgery (BDS)',
     },
     {
       icon: '',
-      label: 'Email Us',
-      data: 'office@dentalvision.com\n24hr@dentalvision.com',
+      label: 'Work Experiences',
+      data: 'Observership at Dr. Rajender Prasad Government Medical College, Tanda Kangra\n\nEx. Dental Surgeon/Lecturer\nS.G.R.D. Dental College, Amritsar',
+    },
+    {
+      icon: '',
+      label: 'Call Us',
+      data: '<a href="tel:+919418794157">+91 94187-94157</a>',
     },
   ];
 }

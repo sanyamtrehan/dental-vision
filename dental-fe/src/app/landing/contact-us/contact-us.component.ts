@@ -17,7 +17,7 @@ export class ContactUsComponent {
   contactInfo = [
     {
       icon: '',
-      label: 'Call us at',
+      label: '24/7 Emergency',
       data: '<a href="tel:+919418794157">+91 94187-94157</a>',
     },
     {
@@ -28,7 +28,7 @@ export class ContactUsComponent {
     // {
     //   icon: '',
     //   label: 'Write Us',
-    //   data: 'office@dentalvision.com\n24hr@dentalvision.com',
+    //   data: '<a href="mailto:dentalvisiontanda@gmail.com">dentalvisiontanda@gmail.com</a>',
     // },
   ];
 

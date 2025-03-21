@@ -25,3 +25,8 @@
     <p class="text-center">{{ service.desc }}</p>
   </div>
 </div>
+
+<p>
+  and other basic services like:
+  <span *ngFor="let service of otherServices">{{ service }}</span>
+</p>

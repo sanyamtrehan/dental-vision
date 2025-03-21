@@ -55,4 +55,15 @@ export class ServicesComponent {
       desc: 'Restore damaged teeth with durable crowns and bridges.',
     },
   ];
+
+  otherServices = [
+    'Digital Dental X-ray',
+    'Painless Tooth Extraction',
+    'Braces, Aligners',
+    'Implants',
+    'R.C.T., Crown and Bridges',
+    'Dentures - R.P.D., C.D.',
+    'Scaling, Dental Jewelry',
+    'Dental Surgeries',
+  ];
 }

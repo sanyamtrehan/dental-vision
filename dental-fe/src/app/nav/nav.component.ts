@@ -35,8 +35,8 @@ export class NavComponent {
     return [
       {
         icon: faClock,
-        label: 'Monday to Saturday',
-        data: '8AM - 9PM',
+        label: 'Monday to Sunday',
+        data: '9AM - 8PM',
       },
       {
         icon: faLocation,
