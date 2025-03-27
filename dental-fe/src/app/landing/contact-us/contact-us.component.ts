@@ -13,6 +13,7 @@ import { AppService } from '../../app.service';
 })
 export class ContactUsComponent {
   private appService = inject(AppService);
+  mapUrl = 'https://maps.app.goo.gl/rikrT14dePHRaHxC9';
 
   contactInfo = [
     {
@@ -23,7 +24,7 @@ export class ContactUsComponent {
     {
       icon: '\uE902',
       label: 'Address',
-      data: this.appService.address,
+      data: `<a href="${this.mapUrl}" target="_blank">${this.appService.address}</a>`,
     },
     // {
     //   icon: '\uE907',
@@ -32,8 +33,14 @@ export class ContactUsComponent {
     // },
   ];
 
+  openCalendly = this.appService.openCalendly;
+
   /**
    * constructor
    */
   constructor() {}
+
+  navigateToMap() {
+    window.open(String(this.mapUrl), '_blank');
+  }
 }

@@ -10,7 +10,7 @@ declare global {
 export class AppService {
   phoneNumber = 9418794157;
   address =
-    'G-4, Shri Krishna Complex, Near Tanda Medical College Gate, Tanda, Distt Kangra, pin: 176002, Himachal Pradesh, India';
+    'G-4, Shri Krishna Complex, Near Tanda Medical College Gate, Tanda, Distt Kangra, PIN: 176002, Himachal Pradesh, India';
 
   openCalendly() {
     const calendly = window.Calendly;

@@ -35,16 +35,19 @@
       </div>
     </div>
 
-    <a class="btn btn--primary !bg-primary w-fit">Consult With Us</a>
+    <a class="btn btn--primary !bg-primary w-fit" (click)="openCalendly()"
+      >Consult With Us</a
+    >
   </div>
 </div>
 
 <ng-template #mapEl let-classVar="classVar">
   <div class="{{ classVar }} relative aspect-[88/82] md:aspect-auto">
     <img
-      class="absolute pointer-events-none"
+      class="absolute"
       src="contact-us/map-bg.png"
       alt=" contact us bg"
+      (click)="navigateToMap()"
     />
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3379.8307331372775!2d76.30216767636499!3d32.100860118232134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b4ff4da9877ed%3A0x147b46521578ea0e!2sDental%20Vision%20%2CTanda%20(Dr.%20Vibha%20Arora)!5e0!3m2!1sen!2sin!4v1741422853037!5m2!1sen!2sin"

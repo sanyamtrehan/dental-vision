@@ -22,6 +22,12 @@ export class FooterComponent {
     { link: 'Contact Us', sectionId: 'landing-contact-us' },
   ];
 
+  awards = [
+    'BCLSS certified',
+    'CCLS certified',
+    'Hospital management certificate',
+  ];
+
   private getTiming = (from: number, to: number) => `${from}AM - ${to}PM`;
 
   workingTimings = [
