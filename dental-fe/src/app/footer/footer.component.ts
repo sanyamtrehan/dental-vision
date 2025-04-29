@@ -23,7 +23,7 @@ export class FooterComponent {
   ];
 
   awards = [
-    'BCLSS certified',
+    'BCLS certified',
     'CCLS certified',
     'Hospital management certificate',
   ];

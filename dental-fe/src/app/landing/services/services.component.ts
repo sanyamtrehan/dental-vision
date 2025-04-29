@@ -63,7 +63,7 @@ export class ServicesComponent {
     'Implants',
     'R.C.T., Crown and Bridges',
     'Dentures - R.P.D., C.D.',
-    'Scaling, Dental Jewelry',
+    'Scaling, Dental Jewellery',
     'Dental Surgeries',
   ];
 }

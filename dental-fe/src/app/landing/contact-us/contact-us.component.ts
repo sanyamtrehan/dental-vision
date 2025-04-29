@@ -18,7 +18,7 @@ export class ContactUsComponent {
   contactInfo = [
     {
       icon: '\uE909',
-      label: '24/7 Emergency',
+      label: 'Emergency Number',
       data: '<a href="tel:+919418794157">+91 94187-94157</a>',
     },
     {
@@ -26,11 +26,11 @@ export class ContactUsComponent {
       label: 'Address',
       data: `<a href="${this.mapUrl}" target="_blank">${this.appService.address}</a>`,
     },
-    // {
-    //   icon: '\uE907',
-    //   label: 'Write Us',
-    //   data: '<a href="mailto:dentalvisiontanda@gmail.com">dentalvisiontanda@gmail.com</a>',
-    // },
+    {
+      icon: '\uE907',
+      label: 'Write Us',
+      data: '<a href="mailto:dentalvisiontanda@gmail.com">dentalvisiontanda@gmail.com</a>',
+    },
   ];
 
   openCalendly = this.appService.openCalendly;

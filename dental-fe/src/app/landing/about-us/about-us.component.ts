@@ -24,7 +24,7 @@ export class AboutUsComponent {
     {
       icon: '\uE91E',
       label: 'Work Experiences',
-      data: 'Philadelphia Hospital, Ambala City\n\nDental Surgeon/Lecturer\nS.G.R.D. Dental College, Amritsar\n\nObservership at Dr. Rajender Prasad Government Medical College, Tanda Kangra',
+      data: 'Philadelphia Hospital, Ambala City\n\nDental Surgeon/Lecturer\nS.G.R.D. Dental College, Amritsar\n\nObservership at Dr. Rajendra Prasad Government Medical College, Tanda, Kangra',
     },
     {
       icon: '\uE907',

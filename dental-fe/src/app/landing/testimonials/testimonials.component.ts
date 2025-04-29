@@ -13,18 +13,18 @@ export class TestimonialsComponent {
   testimonials = [
     {
       img: 'client-01',
-      title: 'One great experience.',
-      desc: 'Holistically generate open-source applications through bleeding-edge sources supply just in time.',
+      title: 'I can finally smile with confidence!',
+      desc: 'After years of hiding my smile, I now feel amazing. The dental work was top-notch, and the results exceeded my expectations.',
     },
     {
       img: 'client-02',
-      title: 'I look & feel great!',
-      desc: 'Objectively integrate enterprise-wide strategic theme areas with functionalized infrastructures.',
+      title: 'A truly comforting experience.',
+      desc: 'From the moment I walked in, the care and professionalism were outstanding. The procedure was painless, and the team made me feel completely at ease.',
     },
     {
       img: 'client-03',
-      title: 'Nothing but the tooth!',
-      desc: 'Efficiently enable enabled sources and cost effective product synthesize principle-centered information.',
+      title: 'Exceptional care, every step of the way.',
+      desc: 'The attention to detail and compassion shown throughout my treatment made all the difference. I highly recommend them to anyone seeking quality dental care.',
     },
   ];
 

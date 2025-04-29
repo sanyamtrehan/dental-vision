@@ -2,23 +2,25 @@
   class="max-w-primary flex flex-col relative z-50 justify-center h-full text-white min-h-[500px] sm:min-h-[850px]"
 >
   <h1
-    class="hero-heading flex flex-col text-[3.5em] md:text-[4em] lg:text-[5.625em] leading-none md:max-w-1/2 mt-[-20%]"
+    class="hero-heading flex flex-col text-[2.5em] sm:text-[3em] md:text-[3.25em] lg:text-[4.25em] md:max-w-1/2 mt-[-20%]"
   >
-    <div class="text-accent text-[60%]">A Reason</div>
-    <div class="font-bold">To Smile</div>
+    <div class="text-[80%] leading-[1.2]">{{ dataToUse.heading }}</div>
+    <div class="font-bold text-accent leading-[1.1]">
+      {{ dataToUse.subheading }}
+    </div>
   </h1>
 
   <div
     class="sm:max-w-1/2 lg:max-w-2/5 text-sm md:text-base lg:text-lg mt-[1.125rem]"
   >
-    Where world-class dentistry meets Himalayan serenity. Experience expert,
-    personalized care in a calming environment, ensuring a radiant, healthy
-    smile. Book your appointment today!
+    {{ dataToUse.description }}
   </div>
 
   <div class="mt-[44px] flex items-center gap-2">
-    <a href="#landing-services" class="btn btn--accent">View Our Services</a>
-    <a class="btn" (click)="openCalendly()"> Book a meeting</a>
+    <a href="#landing-services" class="btn btn--accent">{{
+      dataToUse.primaryBtn
+    }}</a>
+    <a class="btn" (click)="openCalendly()">{{ dataToUse.subheading }}</a>
   </div>
 </div>
 <div class="hero-bg"></div>

@@ -15,13 +15,16 @@
         Completely synthesize principle-centered information.
       </p>
       <div class="flex flex-col sm:flex-row items-center gap-2 mt-10">
-        <input
+        <!-- <input
           class="flex-1 bg-white rounded-full py-[1.125em] px-[1.563em] w-full"
           type="text"
           placeholder="Enter Something"
-        />
-        <button class="btn btn--accent h-full w-full sm:w-fit">
-          Kindly Click Here
+        /> -->
+        <button
+          class="btn h-full w-full sm:w-1/2 justify-center"
+          (click)="openCalendly()"
+        >
+          Book your spot
         </button>
       </div>
     </div>
@@ -36,14 +39,14 @@
       </h3>
       <p class="text-center text-white">
         Hear from our happy patients who have experienced exceptional care,
-        personalized treatments, and transformed smiles at Dental Vision.
+        personalized treatments and transformed smiles at Dental Vision.
       </p>
     </div>
 
     <div class="flex flex-col sm:flex-row gap-20">
       <div
         *ngFor="let testimonial of testimonials"
-        class="flex flex-col items-center text-center"
+        class="flex flex-col items-center text-center flex-1"
       >
         <img
           class="rounded-full mb-7 aspect-square object-top object-cover tab:mb-10"
