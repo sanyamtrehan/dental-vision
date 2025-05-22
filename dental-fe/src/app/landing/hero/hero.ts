@@ -1,6 +1,7 @@
 export enum SupportedLangs {
-  ENGLISH = 'en',
-  TIBETAN = 'bo',
+  ENGLISH = "en",
+  TIBETAN = "bo",
+  PUNJABI = "pa",
 }
 
 export interface HeroData {
