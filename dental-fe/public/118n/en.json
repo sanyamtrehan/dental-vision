@@ -1,0 +1,144 @@
+{
+  "lang": {
+    "en": "English",
+    "bo": "Tibetian",
+    "pa": "Punjabi"
+  },
+  "nav": {
+    "monToSun": "Monday to Sunday",
+    "9AmTo8Pm": "9AM - 8PM",
+    "address": "Address",
+    "clinicAddress": "G-4, Shri Krishna Complex, Near Tanda Medical College Gate, Tanda, Distt Kangra, PIN: 176002, Himachal Pradesh, India"
+  },
+  "hero": {
+    "heading": "Dental Vision",
+    "subheading": "A Reason To Smile",
+    "description": "Where world-class dentistry meets Himalayan serenity. Experience expert, personalized care in a calming environment, ensuring a radiant, healthy smile. Book your appointment today!",
+    "primaryBtn": "View Our Services",
+    "secondaryBtn": "Book a meeting"
+  },
+  "services": {
+    "title": "Be Proud Of Your Smile",
+    "description": " Discover personalized dental care designed to enhance your smile with precision, comfort and the tranquility of the Himalayas. Let us help you achieve healthy, lasting confidence.",
+    "service": {
+      "implantsAndAligners": "Implants and aligners",
+      "implantsAndAlignersInfo": "Restore missing teeth and straighten smiles with advanced solutions.",
+      "braces": "Braces",
+      "bracesInfo": "Align teeth perfectly for a healthier and confident smile.",
+      "veneers": "Veneers",
+      "veneersInfo": "Enhance your smile with natural-looking, durable dental veneers.",
+      "cosmeticDentistry": "Cosmetic dentistry",
+      "cosmeticDentistryInfo": "Transform your smile with advanced aesthetic dental treatments.",
+      "bleaching": "Bleaching",
+      "bleachingInfo": "Brighten your teeth with safe and effective whitening treatments.",
+      "maxillaryFracture": "Maxillary fracture",
+      "maxillaryFractureInfo": "Expert treatment for upper jaw fractures ensuring proper healing.",
+      "mandibularFracture": "Mandibular fracture",
+      "mandibularFractureInfo": "Precise care for lower jaw fractures with specialized treatment.",
+      "crownAndBridge": "Crown and bridge",
+      "crownAndBridgeInfo": "Restore damaged teeth with durable crowns and bridges."
+    },
+    "moreServicesWeOffer": "and some other services we offer:",
+    "otherServices": {
+      "digitalDentalXray": "Digital Dental X-ray",
+      "painlessToothExtraction": "Painless Tooth Extraction",
+      "bracesAndAligners": "Braces, Aligners",
+      "implants": "Implants",
+      "rctCrownAndBridges": "R.C.T., Crown and Bridges",
+      "denturesRpdCd": "Dentures - R.P.D., C.D.",
+      "scalingAndDentalJewellery": "Scaling, Dental Jewellery",
+      "dentalSurgeries": "Dental Surgeries"
+    }
+  },
+  "aboutUs": {
+    "consultDrVibha": "Consult Dr. Vibha Arora",
+    "contactInfo": {
+      "education": "Education",
+      "educationInfo": "Bachelor of Dental Surgery (BDS)",
+      "workExperiences": "Work Experiences",
+      "workExperiencesInfo": "Philadelphia Hospital, Ambala City\n\nDental Surgeon/Lecturer\nS.G.R.D. Dental College, Amritsar\n\nObservership at Dr. Rajendra Prasad Government Medical College, Tanda, Kangra",
+      "callUs": "Call Us",
+      "callUsInfo": "<a href=\"tel:+919418794157\">+91 94187-94157</a>"
+    },
+    "info": {
+      "heading": "Welcome to Dental Vision! I am Dr. Vibha Arora, and my passion lies in helping patients achieve healthy, beautiful smiles with expert care and a personal touch. With over 18 years of experience in dentistry, I have dedicated my career to providing top-tier dental solutions in a warm, welcoming environment.",
+      "journeyA": " My journey in dentistry began at MN DAV College, Solan, and continued at Philadelphia Hospital, Ambala City, where I honed my skills and developed a deep understanding of patient care. I later served as an Lecturer and Dental Surgeon at SGRD Dental College, Amritsar, sharing my knowledge with aspiring dental professionals. To further refine my expertise, I pursued an observership at Dr. Rajendra Prasad Government Medical College, Tanda, Kangra, gaining hands-on experience in advanced dental procedures. Since 2005, I have been dedicated to serving patients, offering a combination of expertise, compassion, and modern dental techniques to ensure the best possible care.",
+      "journeyB": "Nestled in the foothills of the Himalayas, Dental Vision is more than just a clinic—it is a place where modern dentistry meets holistic well-being. We believe that oral health is integral to overall health, and we strive to make every patient feel at ease with customized treatment plans and a compassionate approach. Whether you need preventive care, restorative treatments, or a complete smile transformation, my goal is to ensure that your visit is comfortable, stress-free, and rewarding.",
+      "journeyC": " At Dental Vision, we emphasize patient education, empowering you to take charge of your oral health. We are here to listen to your concerns, guide you through your treatment, and provide pain-free, high-quality care tailored to your needs. Our mission is to not only restore smiles but to build long-lasting relationships based on trust, excellence, and personalized attention.",
+      "journeyD": "Our clinic is equipped with state-of-the-art technology, ensuring that every procedure is performed with precision and efficiency. From digital X-rays to advanced sterilization techniques, we prioritize patient safety and comfort. We offer a wide range of services, including general dentistry, cosmetic enhancements, and specialized treatments to address various dental concerns.",
+      "journeyE": "Beyond just treatment, We are passionate about preventive care and long-term oral health. By equipping my patients with the knowledge and tools needed to maintain their smiles, we empower them to take charge of their dental well-being. At Dental Vision, we are not just restoring smiles—we are building lasting relationships based on trust, care, and excellence."
+    }
+  },
+  "testimonials": {
+    "title": "Get A Quote",
+    "subheading": "Efficiently enable enabled sources and cost effective products. Completely synthesize principle-centered information.",
+    "bookYourSpot": "Book your spot",
+    "sweetDentalExperience": "Sweet Dental Experience",
+    "hearFromClients": "Hear from our happy patients who have experienced exceptional care, personalized treatments and transformed smiles at Dental Vision.",
+    "clientReviews": {
+      "reviewA": "I can finally smile with confidence!",
+      "reviewAInfo": "After years of hiding my smile, I now feel amazing. The dental work was top-notch, and the results exceeded my expectations.",
+      "reviewB": "A truly comforting experience.",
+      "reviewBInfo": "From the moment I walked in, the care and professionalism were outstanding. The procedure was painless, and the team made me feel completely at ease.",
+      "reviewC": "Exceptional care, every step of the way.",
+      "reviewCInfo": "The attention to detail and compassion shown throughout my treatment made all the difference. I highly recommend them to anyone seeking quality dental care."
+    },
+    "bookAnAppointment": "Book an Appointment"
+  },
+  "kidsCare": {
+    "title": "Kids Oral Care",
+    "subheading": "Gentle and specialized dental care tailored for your little ones. We ensure a fun, stress-free experience to keep their smiles bright and healthy from the very start.",
+    "oralCares": {
+      "brushing": "Brushing",
+      "brushingInfo": "Develop strong oral hygiene habits with proper brushing techniques that keep cavities and plaque at bay.",
+      "nutrition": "Nutrition",
+      "nutritionInfo": "A balanced diet plays a crucial role in oral health. We guide parents on the best foods for strong teeth and gums.",
+      "checkups": "Checkups",
+      "checkupsInfo": "Regular dental visits ensure early detection of issues and keep your child's smile healthy and bright."
+    }
+  },
+  "ourClinic": {
+    "title": "Our Clinic"
+  },
+  "contactUs": {
+    "title": "Contact Us",
+    "subtitle": "Have questions or need to schedule an appointment? Reach out to us today and let our friendly team assist you with all your dental care needs.",
+    "contactInfo": {
+      "emergencyNumber": "Emergency Number",
+      "address": "Address",
+      "writeUs": "Write Us"
+    },
+    "consultWithUs": "Consult With Us"
+  },
+  "footer": {
+    "dentalVisionInfo": "Dental Vision is proudly operated by Dr. Vibha Arora, dedicated to providing expert, compassionate dental care with a personal touch",
+    "emergencyNumber": "Emergency Number",
+    "aboutDentalVision": "About Dental Vision",
+    "navLink": {
+      "ourServices": "Our Services",
+      "aboutUs": "About Us",
+      "testimonials": "Testimonials",
+      "kidsCare": "Kids Care",
+      "contactUs": "Contact Us"
+    },
+    "ourAwards": "Our Awards",
+    "dentalAwards": {
+      "bclsCertified": "BCLS certified",
+      "cclsCertified": "CCLS certified",
+      "hospitalManagementCertificate": "Hospital management certificate"
+    },
+    "workingHours": "Working Hours",
+    "ist": "(Indian Standard Time)",
+    "workPeriod": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "onAppointment": "On Appointment",
+      "9AmTo8Pm": "9AM - 8PM"
+    }
+  }
+}

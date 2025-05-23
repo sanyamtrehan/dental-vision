@@ -1,28 +1,48 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { MatSelectModule } from "@angular/material/select";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { FormControl, ReactiveFormsModule } from "@angular/forms";
 
-import { faClock } from '@fortawesome/free-regular-svg-icons';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faPhone, faLocation } from '@fortawesome/free-solid-svg-icons';
+import { faClock } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { TranslatePipe, TranslateService } from "@ngx-translate/core";
+import { faPhone, faLocation } from "@fortawesome/free-solid-svg-icons";
 
-import { LogoComponent } from '../logo';
-import { AppService } from '../app.service';
+import { LogoComponent } from "../logo";
+import { AppService } from "../app.service";
+import { SupportedLangs } from "../models/language";
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  imports: [FontAwesomeModule, CommonModule, LogoComponent],
+  selector: "app-nav",
+  templateUrl: "./nav.component.html",
+  imports: [
+    FontAwesomeModule,
+    CommonModule,
+    LogoComponent,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    TranslatePipe,
+  ],
   host: {
-    class: 'max-w-primary w-full z-50',
+    class: "max-w-primary w-full z-50",
   },
 })
-export class NavComponent {
+export class NavComponent implements OnInit {
   faPhone = faPhone;
 
   phoneNumber;
   bannerData;
 
-  constructor(private readonly appService: AppService) {
+  supportedLangs = Object.values(SupportedLangs);
+
+  langCtrl = new FormControl(SupportedLangs.ENGLISH);
+
+  constructor(
+    private readonly appService: AppService,
+    private readonly translate: TranslateService
+  ) {
     const no = appService.phoneNumber.toString();
     this.phoneNumber = {
       display: `+91 ${no.substring(0, 5)}-${no.substring(5, no.length)}`,
@@ -31,16 +51,31 @@ export class NavComponent {
     this.bannerData = this.getBannerData();
   }
 
+  // -----------------------------------------------------------------------------------------------------
+  // @ Life Cycle Hooks
+  // -----------------------------------------------------------------------------------------------------
+
+  ngOnInit() {
+    this.langCtrl.valueChanges.subscribe((lang) => {
+      console.log(lang);
+      lang && this.translate.use(lang);
+    });
+  }
+
+  // -----------------------------------------------------------------------------------------------------
+  // @ Private methods
+  // -----------------------------------------------------------------------------------------------------
+
   private getBannerData() {
     return [
       {
         icon: faClock,
-        label: 'Monday to Sunday',
-        data: '9AM - 8PM',
+        label: "monToSun",
+        data: "9AmTo8Pm",
       },
       {
         icon: faLocation,
-        label: 'Address',
+        label: "address",
         data: this.appService.address,
       },
     ];

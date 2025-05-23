@@ -1,12 +1,8 @@
 <div class="flex flex-col flex-1">
   <h3 class="text-accent text-4xl tab:text-5xl md:text-6xl mb-10">
-    Kids Oral Care
+    {{ "kidsCare.title" | translate }}
   </h3>
-  <p class="mb-10">
-    Gentle and specialized dental care tailored for your little ones. We ensure
-    a fun, stress-free experience to keep their smiles bright and healthy from
-    the very start.
-  </p>
+  <p class="mb-10">{{ "kidsCare.subheading" | translate }}</p>
 
   <ng-container
     *ngTemplateOutlet="kidsImg; context: { classVar: 'block md:hidden mb-10' }"
@@ -22,9 +18,9 @@
         attr.data-ico-dentist2="{{ care.icon }}"
       ></span>
       <h4 class="text-2xl mb-2.5 text-primary">
-        {{ care.label }}
+        {{ "kidsCare.oralCares." + care.label | translate }}
       </h4>
-      <p>{{ care.desc }}</p>
+      <p>{{ "kidsCare.oralCares." + care.desc | translate }}</p>
     </div>
   </div>
 </div>

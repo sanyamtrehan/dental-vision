@@ -4,23 +4,27 @@
   <h1
     class="hero-heading flex flex-col text-[2.5em] sm:text-[3em] md:text-[3.25em] lg:text-[4.25em] md:max-w-1/2 mt-[-20%]"
   >
-    <div class="text-[80%] leading-[1.2]">{{ dataToUse.heading }}</div>
+    <div class="text-[80%] leading-[1.2]">
+      {{ "hero.heading" | translate }}
+    </div>
     <div class="font-bold text-accent leading-[1.1]">
-      {{ dataToUse.subheading }}
+      {{ "hero.subheading" | translate }}
     </div>
   </h1>
 
   <div
     class="sm:max-w-1/2 lg:max-w-2/5 text-sm md:text-base lg:text-lg mt-[1.125rem]"
   >
-    {{ dataToUse.description }}
+    {{ "hero.description" | translate }}
   </div>
 
   <div class="mt-[44px] flex items-center gap-2">
     <a href="#landing-services" class="btn btn--accent">{{
-      dataToUse.primaryBtn
+      "hero.primaryBtn" | translate
     }}</a>
-    <a class="btn" (click)="openCalendly()">{{ dataToUse.subheading }}</a>
+    <a class="btn" (click)="openCalendly()">{{
+      "hero.subheading" | translate
+    }}</a>
   </div>
 </div>
 <div class="hero-bg"></div>

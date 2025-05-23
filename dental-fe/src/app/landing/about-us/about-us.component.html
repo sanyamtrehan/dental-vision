@@ -1,7 +1,9 @@
 <div
   class="border-[5px] border-[#f6eeea] rounded-[26px] px-5 mob:px-8 sm:px-12 py-3 mob:py-6 sm:py-10 sm:min-w-96"
 >
-  <h4 class="text-primary text-2xl">Consult Dr. Vibha Arora</h4>
+  <h4 class="text-primary text-2xl">
+    {{ "aboutUs.consultDrVibha" | translate }}
+  </h4>
 
   <ng-container *ngTemplateOutlet="divider"></ng-container>
 
@@ -17,11 +19,11 @@
 
         <div class="flex flex-col gap-2 tab:gap-3">
           <h3 class="text-xl tab:text-2xl text-accent">
-            {{ info.label }}
+            {{ "aboutUs.contactInfo." + info.label | translate }}
           </h3>
           <pre
             class="text-sm text-wrap break-words"
-            [innerHTML]="info.data"
+            [innerHTML]="'aboutUs.contactInfo.' + info.data | translate"
           ></pre>
         </div>
       </div>
@@ -31,69 +33,21 @@
 
 <div class="flex flex-col my-5">
   <p class="text-xl">
-    Welcome to Dental Vision! I am Dr. Vibha Arora, and my passion lies in
-    helping patients achieve healthy, beautiful smiles with expert care and a
-    personal touch. With over 18 years of experience in dentistry, I have
-    dedicated my career to providing top-tier dental solutions in a warm,
-    welcoming environment.
+    {{ "aboutUs.info.heading" | translate }}
   </p>
 
   <ng-container *ngTemplateOutlet="divider"></ng-container>
 
   <div class="flex flex-col sm:flex-row sm:gap-10 sm:text-sm lg:text-base">
     <div class="flex flex-col flex-1 gap-4">
-      <p>
-        My journey in dentistry began at MN DAV College, Solan, and continued at
-        Philadelphia Hospital, Ambala City, where I honed my skills and
-        developed a deep understanding of patient care. I later served as an
-        Lecturer and Dental Surgeon at SGRD Dental College, Amritsar, sharing my
-        knowledge with aspiring dental professionals. To further refine my
-        expertise, I pursued an observership at Dr. Rajendra Prasad Government
-        Medical College, Tanda, Kangra, gaining hands-on experience in advanced
-        dental procedures. Since 2005, I have been dedicated to serving
-        patients, offering a combination of expertise, compassion, and modern
-        dental techniques to ensure the best possible care.
-      </p>
-
-      <p>
-        Nestled in the foothills of the Himalayas, Dental Vision is more than
-        just a clinic—it is a place where modern dentistry meets holistic
-        well-being. We believe that oral health is integral to overall health,
-        and we strive to make every patient feel at ease with customized
-        treatment plans and a compassionate approach. Whether you need
-        preventive care, restorative treatments, or a complete smile
-        transformation, my goal is to ensure that your visit is comfortable,
-        stress-free, and rewarding.
-      </p>
+      <p>{{ "aboutUs.info.journeyA" | translate }}</p>
+      <p>{{ "aboutUs.info.journeyB" | translate }}</p>
     </div>
 
     <div class="flex flex-col flex-1 gap-4">
-      <p>
-        At Dental Vision, we emphasize patient education, empowering you to take
-        charge of your oral health. We are here to listen to your concerns,
-        guide you through your treatment, and provide pain-free, high-quality
-        care tailored to your needs. Our mission is to not only restore smiles
-        but to build long-lasting relationships based on trust, excellence, and
-        personalized attention.
-      </p>
-
-      <p>
-        Our clinic is equipped with state-of-the-art technology, ensuring that
-        every procedure is performed with precision and efficiency. From digital
-        X-rays to advanced sterilization techniques, we prioritize patient
-        safety and comfort. We offer a wide range of services, including general
-        dentistry, cosmetic enhancements, and specialized treatments to address
-        various dental concerns.
-      </p>
-
-      <p>
-        Beyond just treatment, We are passionate about preventive care and
-        long-term oral health. By equipping my patients with the knowledge and
-        tools needed to maintain their smiles, we empower them to take charge of
-        their dental well-being. At Dental Vision, we are not just restoring
-        smiles—we are building lasting relationships based on trust, care, and
-        excellence.
-      </p>
+      <p>{{ "aboutUs.info.journeyC" | translate }}</p>
+      <p>{{ "aboutUs.info.journeyD" | translate }}</p>
+      <p>{{ "aboutUs.info.journeyE" | translate }}</p>
     </div>
   </div>
 </div>

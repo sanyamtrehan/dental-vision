@@ -1,4 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+// Custom Theming for Angular Material
+// For more information: https://material.angular.dev/guide/theming
+@use "@angular/material" as mat;
+
+html {
+  @include mat.theme(
+    (
+      color: (
+        theme-type: light,
+        primary: mat.$azure-palette,
+        tertiary: mat.$blue-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    )
+  );
+} /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss/index.css" important;
 @import "tailwindcss" important;
 
@@ -28,6 +44,7 @@ pre {
 
 @theme static {
   --breakpoint-mob: 375px;
+  --breakpoint-mob-xl: 450px;
   --breakpoint-sm: 600px;
   --breakpoint-tab: 768px;
   --breakpoint-md: 960px;
@@ -141,8 +158,63 @@ h6 {
   }
 }
 
+.lang-selector {
+  --mdc-outlined-text-field-outline-color: white;
+  --mdc-outlined-text-field-hover-outline-color: white;
+  --mdc-outlined-text-field-focus-outline-color: white;
+  --mat-select-enabled-arrow-color: white;
+  --mat-select-focused-arrow-color: white;
+  --mat-form-field-container-vertical-padding: 0.625em;
+  --mat-select-trigger-text-size: 1em;
+  --mdc-outlined-text-field-container-shape: 50px;
+  --mat-form-field-container-height: fit-content;
+  --mat-select-enabled-trigger-text-color: white;
+  --mat-form-field-container-text-size: 1em;
+
+  .mat-mdc-form-field-subscript-wrapper {
+    display: none;
+  }
+
+  .mdc-text-field--outlined {
+    padding: 0 1em;
+  }
+
+  .mat-mdc-form-field-infix {
+    width: 9ch;
+  }
+
+  &--panel {
+    --mat-option-label-text-size: 1em;
+    --mat-option-selected-state-label-text-color: var(--color-accent);
+
+    .mat-pseudo-checkbox {
+      width: 1.125rem;
+      height: 1.125rem;
+      margin-left: 1em !important;
+
+      &::after {
+        width: 0.875em !important;
+        height: 0.375em !important;
+      }
+    }
+  }
+}
+
 @media (max-width: 640px) {
   .btn {
     font-size: 0.8em;
+  }
+
+  .lang-selector {
+    --mat-form-field-container-text-size: 0.8em;
+    --mat-form-field-container-vertical-padding: 0.5em;
+
+    &--panel {
+      --mat-option-label-text-size: 0.8em;
+
+      .mat-pseudo-checkbox {
+        margin-left: 0.5em !important;
+      }
+    }
   }
 }

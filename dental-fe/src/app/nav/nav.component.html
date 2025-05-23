@@ -6,15 +6,27 @@
     class="inline-flex items-center gap-[0.5em] text-white text-[0.75em] sm:text-[.875em] mr-3.5"
   >
     <fa-icon class="text-white" size="xs" [icon]="data.icon"></fa-icon>
-    <span>{{ data.label }}</span>
-    <span class="opacity-50">{{ data.data }}</span>
+    <span>{{ "nav." + data.label | translate }}</span>
+    <span class="opacity-50">{{ "nav." + data.data | translate }}</span>
   </div>
 </marquee>
 
 <nav class="flex items-center justify-between py-3">
   <app-logo class="h-20"></app-logo>
 
-  <a class="btn btn--accent" href="tel:{{ phoneNumber.call }}"
-    ><fa-icon [icon]="faPhone"></fa-icon>{{ phoneNumber.display }}</a
+  <div
+    class="flex items-end mob-xl:items-center flex-col mob-xl:flex-row gap-3 mob-xl:gap-5"
   >
+    <mat-form-field class="lang-selector" appearance="outline">
+      <mat-select panelClass="lang-selector--panel" [formControl]="langCtrl">
+        <mat-option *ngFor="let lang of supportedLangs" [value]="lang">{{
+          "lang." + lang | translate
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <a class="btn btn--accent" href="tel:{{ phoneNumber.call }}"
+      ><fa-icon [icon]="faPhone"></fa-icon>{{ phoneNumber.display }}</a
+    >
+  </div>
 </nav>

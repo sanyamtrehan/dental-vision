@@ -1,11 +1,9 @@
 <div class="flex flex-col gap-5 max-w-3xl">
   <h2 class="text-primary text-5xl md:text-6xl -tracking-[.03em]">
-    Be Proud Of Your Smile
+    {{ "services.title" | translate }}
   </h2>
   <p class="text-sm md:text-base">
-    Discover personalized dental care designed to enhance your smile with
-    precision, comfort and the tranquility of the Himalayas. Let us help you
-    achieve healthy, lasting confidence.
+    {{ "services.description" | translate }}
   </p>
 </div>
 
@@ -17,18 +15,20 @@
     <img
       class="mb-6 tab:mb-8 md:mb-10 w-[235px]"
       src="services/{{ service.img }}.png"
-      alt="{{ service.name }}"
+      alt="{{ 'services.service.' + service.name | translate }}"
     />
     <h3 class="text-accent text-2xl md:text-3xl mb-2 tab:mb-2.5 text-center">
-      {{ service.name }}
+      {{ "services.service." + service.name | translate }}
     </h3>
-    <p class="text-center">{{ service.desc }}</p>
+    <p class="text-center">
+      {{ "services.service." + service.desc | translate }}
+    </p>
   </div>
 </div>
 
 <section class="flex flex-col gap-4">
   <h3 class="text-accent text-xl tab:text-2xl">
-    and some other services we offer:
+    {{ "services.moreServicesWeOffer" | translate }}
   </h3>
   <div class="grid sm:grid-cols-2 tab:grid-cols-3 md:grid-cols-4 gap-3">
     <div
@@ -39,7 +39,9 @@
         attr.data-ico-dentist2="{{ '\uE925' }}"
         class="text-primary -scale-x-100 text-2xl"
       ></div>
-      <span class="text-lg">{{ service }}</span>
+      <span class="text-lg">{{
+        "services.otherServices." + service | translate
+      }}</span>
     </div>
   </div>
 </section>

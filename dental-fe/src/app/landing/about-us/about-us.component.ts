@@ -1,35 +1,36 @@
-import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { CommonModule } from "@angular/common";
+import { Component, inject } from "@angular/core";
+import { TranslatePipe } from "@ngx-translate/core";
 
-import { AppService } from '../../app.service';
+import { AppService } from "../../app.service";
 
 @Component({
-  selector: 'app-about-us',
-  templateUrl: './about-us.component.html',
-  imports: [CommonModule],
-  styleUrl: './about-us.component.scss',
+  selector: "app-about-us",
+  templateUrl: "./about-us.component.html",
+  imports: [CommonModule, TranslatePipe],
+  styleUrl: "./about-us.component.scss",
   host: {
     class:
-      'max-w-primary section-padding flex w-full gap-6 flex-col md:flex-row',
+      "max-w-primary section-padding flex w-full gap-6 flex-col md:flex-row",
   },
 })
 export class AboutUsComponent {
   private appService = inject(AppService);
   contactInfo = [
     {
-      icon: '\uE902',
-      label: 'Education',
-      data: 'Bachelor of Dental Surgery (BDS)',
+      icon: "\uE902",
+      label: "education",
+      data: "educationInfo",
     },
     {
-      icon: '\uE91E',
-      label: 'Work Experiences',
-      data: 'Philadelphia Hospital, Ambala City\n\nDental Surgeon/Lecturer\nS.G.R.D. Dental College, Amritsar\n\nObservership at Dr. Rajendra Prasad Government Medical College, Tanda, Kangra',
+      icon: "\uE91E",
+      label: "workExperiences",
+      data: "workExperiencesInfo",
     },
     {
-      icon: '\uE907',
-      label: 'Call Us',
-      data: '<a href="tel:+919418794157">+91 94187-94157</a>',
+      icon: "\uE907",
+      label: "callUs",
+      data: "callUsInfo",
     },
   ];
 }

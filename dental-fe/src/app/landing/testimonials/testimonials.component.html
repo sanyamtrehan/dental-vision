@@ -8,12 +8,9 @@
 
     <div class="flex flex-col">
       <h3 class="text-accent text-4xl tab:text-5xl md:text-6xl mb-5">
-        Get A Quote
+        {{ "testimonials.title" | translate }}
       </h3>
-      <p class="text-white">
-        Efficiently enable enabled sources and cost effective products.
-        Completely synthesize principle-centered information.
-      </p>
+      <p class="text-white">{{ "testimonials.subheading" | translate }}</p>
       <div class="flex flex-col sm:flex-row items-center gap-2 mt-10">
         <!-- <input
           class="flex-1 bg-white rounded-full py-[1.125em] px-[1.563em] w-full"
@@ -24,7 +21,7 @@
           class="btn h-full w-full sm:w-1/2 justify-center"
           (click)="openCalendly()"
         >
-          Book your spot
+          {{ "testimonials.bookYourSpot" | translate }}
         </button>
       </div>
     </div>
@@ -35,11 +32,10 @@
       <h3
         class="text-accent text-4xl tab:text-5xl md:text-6xl text-center mb-5"
       >
-        Sweet Dental Experience
+        {{ "testimonials.sweetDentalExperience" | translate }}
       </h3>
       <p class="text-center text-white">
-        Hear from our happy patients who have experienced exceptional care,
-        personalized treatments and transformed smiles at Dental Vision.
+        {{ "testimonials.hearFromClients" | translate }}
       </p>
     </div>
 
@@ -51,13 +47,17 @@
         <img
           class="rounded-full mb-7 aspect-square object-top object-cover tab:mb-10"
           src="testimonials/{{ testimonial.img }}.jpg"
-          alt="{{ testimonial.title }}"
+          alt="{{
+            'testimonials.clientReviews.' + testimonial.title | translate
+          }}"
         />
 
         <h4 class="mb-2.5 tab:mb-5 text-xl tab:text-2xl text-accent">
-          {{ testimonial.title }}
+          {{ "testimonials.clientReviews." + testimonial.title | translate }}
         </h4>
-        <p class="text-white">{{ testimonial.desc }}</p>
+        <p class="text-white">
+          {{ "testimonials.clientReviews." + testimonial.desc | translate }}
+        </p>
       </div>
     </div>
   </div>
@@ -66,7 +66,7 @@
     class="btn btn--accent w-fit absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-50"
     (click)="openCalendly()"
   >
-    Book an Appointment
+    {{ "testimonials.bookAnAppointment" | translate }}
   </a>
 </section>
 

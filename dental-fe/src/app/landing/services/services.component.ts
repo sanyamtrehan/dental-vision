@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { TranslatePipe } from "@ngx-translate/core";
 
 @Component({
-  selector: 'app-services',
-  templateUrl: './services.component.html',
-  imports: [CommonModule],
-  host: { class: 'section-padding max-w-primary flex flex-col gap-16' },
+  selector: "app-services",
+  templateUrl: "./services.component.html",
+  imports: [CommonModule, TranslatePipe],
+  host: { class: "section-padding max-w-primary flex flex-col gap-16" },
 })
 export class ServicesComponent {
   /**
@@ -15,55 +16,55 @@ export class ServicesComponent {
 
   services = [
     {
-      img: '1-implants-and-aligners',
-      name: 'Implants and aligners',
-      desc: 'Restore missing teeth and straighten smiles with advanced solutions.',
+      img: "1-implants-and-aligners",
+      name: "implantsAndAligners",
+      desc: "implantsAndAlignersInfo",
     },
     {
-      img: '2-braces',
-      name: 'Braces',
-      desc: 'Align teeth perfectly for a healthier and confident smile.',
+      img: "2-braces",
+      name: "braces",
+      desc: "bracesInfo",
     },
     {
-      img: '3-veneers',
-      name: 'Veneers',
-      desc: 'Enhance your smile with natural-looking, durable dental veneers.',
+      img: "3-veneers",
+      name: "veneers",
+      desc: "veneersInfo",
     },
     {
-      img: '4-cosmetic-dentistry',
-      name: 'Cosmetic dentistry',
-      desc: 'Transform your smile with advanced aesthetic dental treatments.',
+      img: "4-cosmetic-dentistry",
+      name: "cosmeticDentistry",
+      desc: "cosmeticDentistryInfo",
     },
     {
-      img: '5-bleaching',
-      name: 'Bleaching',
-      desc: 'Brighten your teeth with safe and effective whitening treatments.',
+      img: "5-bleaching",
+      name: "bleaching",
+      desc: "bleachingInfo",
     },
     {
-      img: '6-maxillary-fracture',
-      name: 'Maxillary fracture',
-      desc: 'Expert treatment for upper jaw fractures ensuring proper healing.',
+      img: "6-maxillary-fracture",
+      name: "maxillaryFracture",
+      desc: "maxillaryFractureInfo",
     },
     {
-      img: '7-mandibular-fracture',
-      name: 'Mandibular fracture',
-      desc: 'Precise care for lower jaw fractures with specialized treatment.',
+      img: "7-mandibular-fracture",
+      name: "mandibularFracture",
+      desc: "mandibularFractureInfo",
     },
     {
-      img: '8-crown-and-bridge',
-      name: 'Crown and bridge',
-      desc: 'Restore damaged teeth with durable crowns and bridges.',
+      img: "8-crown-and-bridge",
+      name: "crownAndBridge",
+      desc: "crownAndBridgeInfo",
     },
   ];
 
   otherServices = [
-    'Digital Dental X-ray',
-    'Painless Tooth Extraction',
-    'Braces, Aligners',
-    'Implants',
-    'R.C.T., Crown and Bridges',
-    'Dentures - R.P.D., C.D.',
-    'Scaling, Dental Jewellery',
-    'Dental Surgeries',
+    "digitalDentalXray",
+    "painlessToothExtraction",
+    "bracesAndAligners",
+    "implants",
+    "rctCrownAndBridges",
+    "denturesRpdCd",
+    "scalingAndDentalJewellery",
+    "dentalSurgeries",
   ];
 }
